@@ -1,0 +1,22 @@
+[conf]
+request_url = "https://vgw.baofoo.com/certpayindex"
+ua = 'yundun baofu sdk'
+sdk_log = '/tmp/baofu-sdk.log'
+;4.1 xml, 4.2 json
+version = "4.2"
+;商户号
+member_id = "100026320"
+;终端号
+terminal_id = "200001457"
+product_name = yundun网银充值
+user_name = "user_name"
+;通知类型 1：页面通知+异步通知；0：异步通知
+notice_type = 1
+page_url = http://localhost:5001/syncCallback.php
+return_url = http://localhost:5001/asyncCallback.php
+additional_info = 'additional_info'
+;商户私钥证书密码
+private_key_password = "100026320_704243"
+pfxfilename = "bfkey_100026320@@200001457.pfx"
+cerfilename = "bfkey_100026320@@200001457.cer"
+
